@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+<h2>Dashboard</h2>
+
+<p>Bienvenido {{ usuario.nombre }}!</p>
+
+<a href="{{ url_for('cerrar_sesion') }}" class="btn btn-primary">Cerrar sesión</a>
+{% endblock %}
